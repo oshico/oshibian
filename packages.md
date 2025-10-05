@@ -1,4 +1,4 @@
-# Minimal Debian 13 + i3 Setup
+# Minimal Debian 13 
 
 ## 1️⃣ Base System
 i3
@@ -7,74 +7,79 @@ i3lock-fancy
 lightdm
 dunst
 rofi
+wofi
+sway
+swayidle
+swaylock
+swayosd
+sway-notification-center
+sway-backgrounds
 
 ---
 
 ## 2️⃣ Keyboard Warrior (TUI / Terminal Tools)
 
 ### Terminal & CLI
-kitty            # terminal emulator
-vim              # editor
-xclip            # clipboard manager CLI
-bat              # cat replacement with syntax highlighting
+kitty            # terminal emulator </br>
+vim              # editor </br>
+xclip            # clipboard manager CLI </br>
+bat              # cat replacement with syntax highlighting </br>
 
 ### Networking / Downloads
-curl, wget       # fetch files / HTTP requests
-git              # version control
-docker.io        # container platform
+curl, wget       # fetch files / HTTP requests </br>
+git              # version control </br>
+docker.io        # container platform </br>
 
 ### File Management & Search
-ranger           # terminal file manager
-fd-find          # fast file search
-ripgrep          # text search
-eza              # enhanced ls
-zip / unzip      # archive tools
+ranger           # terminal file manager </br>
+fd-find          # fast file search </br>
+ripgrep          # text search </br>
+eza              # enhanced ls </br>
+zip / unzip      # archive tools </br>
 
 ### System & Monitoring
-btop             # terminal system monitor
-build-essential  # compiler + build tools
-neowofetch       # system info in terminal
+btop             # terminal system monitor </br>
+neowofetch       # system info in terminal </br>
 
 ### Media / Audio
-mpv              # video/audio player
-pipewire-audio   # sound server
-playerctl        # control media players from CLI
+mpv              # video/audio player </br>
+pipewire-audio   # sound server </br>
+playerctl        # control media players from CLI </br>
 
 ### Utilities / Productivity
-fzf              # fuzzy finder
-lazygit          # terminal git client
+fzf              # fuzzy finder </br>
+lazygit          # terminal git client </br>
 
 ### Web & Email
-qutebrowser      # web browser
-neomutt          # mail client
+qutebrowser      # web browser </br>
+neomutt          # mail client </br>
 
 ---
 
 ## 3️⃣ GUI Options
 
 ### Web & Email
-firefox-esr      # web browser
-thunderbird      # mail client
+firefox-esr      # web browser </br>
+thunderbird      # mail client </br>
 
 ### File Management
-thunar           # lightweight GUI file manager
-xarchiver        # archive manager
-catfish          # GUI file search tool
+thunar           # lightweight GUI file manager </br>
+xarchiver        # archive manager </br>
+catfish          # GUI file search tool </br>
 
 ### Media / Audio
-vlc              # GUI media player
-pavucontrol      # GUI volume mixer
+vlc              # GUI media player </br>
+pavucontrol      # GUI volume mixer </br>
 
 ### Graphics / Screenshot
-gimp             # image editor
-xpaint           # lightweight painting
-shutter          # screenshot tool
-feh / nitrogen   # wallpaper setter
+gimp             # image editor </br>
+shutter          # screenshot tool </br>
+feh / nitrogen   # wallpaper setter </br>
 
 ### System / Utilities
-network-manager-applet        # network manager tray GUI
-gtop             # graphical system monitor (optional GUI wrapper for btop)
-copyq            # clipboard manager GUI
+network-manager-applet        # network manager tray GUI </br>
+gtop             # graphical system monitor (optional GUI wrapper  for btop) </br>
+copyq            # clipboard manager GUI </br>
 
 ---
 

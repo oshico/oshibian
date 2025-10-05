@@ -1,0 +1,35 @@
+* {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    font-family: FiraCode Nerd Font;
+}
+
+window {
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #313244;
+    border: 1px solid #45475a;
+}
+
+listview {
+    border-radius: 8px;
+}
+
+listview item {
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+listview item:selected {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+}
+
+input {
+    background-color: #313244;
+    border: 1px solid #45475a;
+    border-radius: 6px;
+    color: #cdd6f4;
+    padding: 8px;
+}
+
