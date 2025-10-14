@@ -30,10 +30,10 @@
     font-family: FiraCode Nerd Font;
     font-size: 12px;
     border: none;
-    border-radius: 8px;
     padding: 0 6px;
     margin: 0;
     min-width: 15px;
+    border-radius: 15px;
 }
 
 /* Base bar */
@@ -134,7 +134,7 @@ color: @crust;
 
 /* Power Profiles Daemon */
 #power-profiles-daemon {
-padding-right: 15px;
+padding-right:10px;
 background-color: @surface0;
 color: @text;
 }
@@ -167,6 +167,7 @@ color: @crust;
 
 /* Idle inhibitor */
 #idle_inhibitor {
+padding-right: 12px;
 background-color: @surface1;
 color: @text;
 }
@@ -203,7 +204,7 @@ padding: 0 10px;
 #custom-power {
 background-color: @red;
 color: @crust;
-padding: 0 10px;
+padding: 0 9px;
 }
 
 /* Modules layout tweaks */
