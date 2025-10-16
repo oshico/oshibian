@@ -8,10 +8,8 @@
     // Choose the order of the modules
     "modules-left": [
         "sway/workspaces",
-        "sway/scratchpad",
     ],
     "modules-right": [
-        "mpd",
         "idle_inhibitor",
         "pulseaudio",
         "cpu",
