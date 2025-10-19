@@ -36,7 +36,7 @@ include ~/.config/sway/catppuccin-mocha
 
 output * bg ~/Pictures/Backgrounds/1.jpg fill
 output DP-1 resolution 1920x1080 position 1920,0
-output HDMI-A-1 resolution 1920x1080 position-1920,0
+output HDMI-A-1 resolution 1920x1080 position -1920,0
 
 ### Idle configuration
 #
