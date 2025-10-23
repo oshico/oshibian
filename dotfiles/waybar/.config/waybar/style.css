@@ -27,195 +27,196 @@
 
 /* Font and general appearance */
 * {
-    font-family: FiraCode Nerd Font;
-    font-size: 12px;
-    border: none;
-    padding: 0 6px;
-    margin: 0;
-    min-width: 15px;
-    border-radius: 15px;
+  font-family: FiraCode Nerd Font;
+  font-size: 12px;
+  border: none;
+  padding: 0 6px;
+  margin: 0;
+  min-width: 15px;
 }
 
 /* Base bar */
 window#waybar {
-    background-color: @base;
-    color: @text;
-    transition-property: background-color;
-    transition-duration: .5s;
+  background-color: @base;
+  color: @text;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
 /* Transparency when hidden */
 window#waybar.hidden {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
 /* Workspaces */
 #workspaces button {
-background-color: transparent;
-color: @text;
-padding: 0 10px;
+  background-color: transparent;
+  color: @text;
+  padding: 0 10px;
 }
 
 #workspaces button.focused {
-background-color: @surface1;
-color: @blue;
+  background-color: @surface1;
+  color: @blue;
 }
 
 #workspaces button.urgent {
-background-color: @red;
-color: @crust;
+  background-color: @red;
+  color: @crust;
 }
 
 #workspaces button:hover {
-background-color: @surface2;
+  background-color: @surface2;
 }
 
 /* Clock */
 #clock {
-background-color: @surface0;
-color: @text;
+  background-color: @surface0;
+  color: @text;
 }
 
 /* Battery */
 #battery {
-background-color: @surface0;
-color: @text;
+  background-color: @surface0;
+  color: @text;
 }
 
-#battery.charging, #battery.plugged {
-background-color: @green;
-color: @crust;
+#battery.charging,
+#battery.plugged {
+  background-color: @green;
+  color: @crust;
 }
 
 #battery.critical:not(.charging) {
-background-color: @red;
-color: @crust;
-animation-name: blink;
-animation-duration: 0.5s;
-animation-timing-function: steps(12);
-animation-iteration-count: infinite;
-animation-direction: alternate;
+  background-color: @red;
+  color: @crust;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes blink {
-    to {
-        background-color: @text;
-        color: @crust;
-    }
+  to {
+    background-color: @text;
+    color: @crust;
+  }
 }
 
 /* Network */
 #network {
-background-color: @surface0;
-color: @text;
+  background-color: @surface0;
+  color: @text;
 }
 
 #network.disconnected {
-background-color: @red;
-color: @crust;
+  background-color: @red;
+  color: @crust;
 }
 
 /* Volume (PulseAudio or PipeWire) */
 #pulseaudio {
-background-color: @yellow;
-color: @crust;
+  background-color: @yellow;
+  color: @crust;
 }
 
 #pulseaudio.muted {
-background-color: @overlay0;
-color: @text;
+  background-color: @overlay0;
+  color: @text;
 }
 
 /* Custom Media Player (e.g., Spotify) */
 #custom-media {
-background-color: @green;
-color: @crust;
+  background-color: @green;
+  color: @crust;
 }
 
 /* Power Profiles Daemon */
 #power-profiles-daemon {
-padding-right:10px;
-background-color: @surface0;
-color: @text;
+  padding-right: 10px;
+  background-color: @surface0;
+  color: @text;
 }
 
 #power-profiles-daemon.performance {
-background-color: @red;
-color: @crust;
+  background-color: @red;
+  color: @crust;
 }
 
 #power-profiles-daemon.balanced {
-background-color: @blue;
-color: @crust;
+  background-color: @blue;
+  color: @crust;
 }
 
 #power-profiles-daemon.power-saver {
-background-color: @green;
-color: @crust;
+  background-color: @green;
+  color: @crust;
 }
 
 /* Tray */
 #tray {
-background-color: @surface0;
-color: @text;
+  background-color: @surface0;
+  color: @text;
 }
 
 #tray > .needs-attention {
-background-color: @red;
-color: @crust;
+  background-color: @red;
+  color: @crust;
 }
 
 /* Idle inhibitor */
 #idle_inhibitor {
-padding-right: 12px;
-background-color: @surface1;
-color: @text;
+  padding-right: 12px;
+  background-color: @surface1;
+  color: @text;
 }
 
 #idle_inhibitor.activated {
-background-color: @text;
-color: @base;
+  background-color: @text;
+  color: @base;
 }
 
 /* Mode indicator */
 #mode {
-background-color: @surface2;
-color: @mauve;
+  background-color: @surface2;
+  color: @mauve;
 }
 
 /* Scratchpad */
 #scratchpad {
-background-color: @surface1;
-color: @text;
+  background-color: @surface1;
+  color: @text;
 }
 
 #scratchpad.empty {
-background-color: transparent;
+  background-color: transparent;
 }
 
 /* Focused window title */
 #window {
-color: @text;
-background-color: @surface0;
-padding: 0 10px;
+  color: @text;
+  background-color: @surface0;
+  padding: 0 10px;
 }
 
 /* Custom power button */
 #custom-power {
-background-color: @red;
-color: @crust;
-padding: 0 9px;
+  background-color: @red;
+  color: @crust;
+  padding: 0 9px;
 }
 
 /* Modules layout tweaks */
-#window, #workspaces {
-margin: 0 4px;
+#window,
+#workspaces {
+  margin: 0 4px;
 }
 
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+  margin-right: 0;
 }
